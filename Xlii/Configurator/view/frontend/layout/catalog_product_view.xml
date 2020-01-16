@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Xlii_Configurator
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head> 
+    <title>EKI Product Configurator Demo</title>
+    <!-- <link src="https://fonts.googleapis.com/css?family=Roboto&display=swap" src_type="url" /> -->
+     <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <link src="assets/css/noscript.css" src_type="url" />
+
+		<css src="Xlii_Configurator::css/main.css" />
+     <!--Load Vue-->
+    <script src="https://unpkg.com/vue/dist/vue.min.js" src_type="url" />
+    <!--Load the web component polyfill-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.3.0/webcomponents-loader.js" src_type="url" />
+    <!--Load your custom element-->
+    <script src="https://eki-demo.netlify.com/assets/product-configurator/eki-product-configurator.min.js" src_type="url" />
+		
+</head>
+    <body>
+  <referenceContainer  name="content">
+            <block class="Xlii\Configurator\Block\Catalog\Product\View" name="catalog.product.view.extrablock"
+                    template="Xlii_Configurator::catalog/product/view.phtml" after="-" />
+        </referenceContainer >
+</body>
+</page>
