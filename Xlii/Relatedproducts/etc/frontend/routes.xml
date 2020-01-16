@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author 42Functions
+ *
+ * @package Xlii_Relatedproducts
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="related" frontName="related">
+            <module name="Xlii_Relatedproducts" />
+        </route>
+    </router>
+</config>
