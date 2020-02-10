@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Ceymox Team
+ * @copyright Copyright (c) 2019 Ceymox (https://ceymox.com)
+ * @package Ceymox_Cart
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="guest" translate="label" sortOrder="1">
+            <label>Add to Cart</label>
+        </tab>
+        <section id="cart" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Add to Cart for Guest</label>
+            <tab>guest</tab>
+            <resource>Ceymox_Cart::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Disable Add to Cart Button </label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+             </group>
+        </section>
+    </system>
+</config>
